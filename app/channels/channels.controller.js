@@ -23,4 +23,6 @@ angular.module('angularfireSlackApp')
         };
       });
     };
+
+    channelsCtrl.users = Users.all;
   })
