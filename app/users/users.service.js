@@ -5,7 +5,7 @@ angular.module('angularfireSlackApp')
     'FirebaseUrl',
     function ($firebaseArray, $firebaseObject, FirebaseUrl) {
       var usersRef = new Firebase(FirebaseUrl + 'users');
-      var connectedRef = new Firebase(FirebaseUrl + './info/connected');
+      var connectedRef = new Firebase(FirebaseUrl + '.info/connected');
       var users = $firebaseArray(usersRef);
       var Users = {
         getProfile: function (uid) {
