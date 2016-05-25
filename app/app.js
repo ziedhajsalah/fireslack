@@ -120,7 +120,7 @@ angular
         controller: 'MessagesCtrl as messagesCtrl',
         resolve: {
           messages: function($stateParams, Messages, profile) {
-            return Messages.forUsers($stateParams.uid, profile.$id).loaded();
+            return Messages.forUsers($stateParams.uid, profile.$id).$loaded();
           },
           channelName: function($stateParams, Users) {
             return Users.all.$loaded().then(function() {

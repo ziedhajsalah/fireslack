@@ -29,4 +29,4 @@ angular.module('angularfireSlackApp')
 
     channelsCtrl.users = Users.all;
     Users.setOnline(profile.$id);
-  })
+  });
